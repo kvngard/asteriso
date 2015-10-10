@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>asteriso</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+  <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+  <link rel="import" href="bower_components/google-map/google-map.html">
+  <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout.html">
+  <link rel="import" href="bower_components/iron-icon/iron-icon.html">
+  <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+  <link rel="import" href="bower_components/paper-item/paper-item.html">
+  <link rel="import" href="bower_components/paper-item/paper-icon-item.html">
+  <link rel="import" href="bower_components/paper-input/paper-input.html">
+  <link rel="import" href="bower_components/paper-card/paper-card.html">
+  
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300' rel='stylesheet' type='text/css'>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body unresolved>
+  
+  <template is="dom-bind">
+    
+    
+    <google-map id="gmap" latitude="40.2444" longitude="-111.6608" zoom="13" disable-default-ui>
+    </google-map>
+    
+    <div class="overlay"></div>
+    
+    <div id="absolute-wrapper" class="layout fit">
+      
+      <div id="content" class="layout vertical center-center">
+        <div class="content" elevation="2">
+          <div class="hero-text">
+            <h1>asterISO</h1>
+            <p>Want to shoot the stars?</br> We help you find the perfect place and time.</p>
+          </div>
+          <input id='location' type="text" class="form-control" placeholder="Provo, UT">
+          <button class="btn">Get Conditions</button>
+        </div>
+      </div>
+    </div>
+    
+  
+  <script src="main.js"></script>
+
+  </template>
+</body>
+</html>
