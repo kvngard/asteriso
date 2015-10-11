@@ -50,6 +50,13 @@ $(function() {
       t.longitude = geo.location.lng
       ;
     });
+     $.ajax({
+      url: "http://api.openweathermap.org/data/2.5/weather?lat=" + t.latitude + "&lon=" + t.longitude + "&APPID=2cf89c1d53be8f70a040718c251ce13f",
+      dataType:'json'
+    }).done(function(results) {
+      console.log(results)
+      $("#weather").text(results)
+    });
   });
    
   $(document).on('click', '.btn', function() {
