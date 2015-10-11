@@ -15,6 +15,21 @@ body, html {
   z-index: 1;
   background-color: rgba(0,0,0,0.65); /*dim the background*/
 }
+.calendar{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  background-color: #fff;
+}
+#close-btn{
+  font-size: 5rem;
+  position: absolute;
+  right: 1rem;
+}
 .content{
   margin-top: 12%;
   z-index: 4;
@@ -30,6 +45,21 @@ body, html {
 .hero-text h1{
   margin-top: 0;
   font-size: 8rem;
+}
+.icon{
+  font-size: 4rem;
+  margin: 4vh 4vw 4vh 4vw;
+}
+.wi{
+  font-size: 10rem;
+}
+#fullDay{
+  margin-top: 8vh;
+  font-size: 4.5rem;
+}
+#info{
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  margin-top: 5%;
 }
 .btn{
   position: relative;
@@ -61,6 +91,4 @@ body, html {
   text-transform: uppercase;
   margin-top: 1rem;
 }
-.btn:hover{
-  text-effects:none;
-}
+.btn:hover { color: #fff; text-decoration: none; }

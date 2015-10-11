@@ -19,9 +19,6 @@
   <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout.html">
   <link rel="import" href="bower_components/iron-icon/iron-icon.html">
   <link rel="import" href="bower_components/iron-icons/iron-icons.html">
-  <link rel="import" href="bower_components/paper-item/paper-item.html">
-  <link rel="import" href="bower_components/paper-item/paper-icon-item.html">
-  <link rel="import" href="bower_components/paper-input/paper-input.html">
   <link rel="import" href="bower_components/paper-card/paper-card.html">
   
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300' rel='stylesheet' type='text/css'>
@@ -30,7 +27,7 @@
   
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
+  <link rel="stylesheet" href="css/weather-icons.min.css">
   
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -59,9 +56,31 @@
       </div>
     </div>
     
-  
+    <div class="calendar">
+      <button type="button" class="close" id="close-btn"><span aria-hidden="true">&times;</span></button>
+      <div id="info" class="layout vertical center-center">
+        <h1 id="fullDay"></h1>
+        <div class="layout horizontal center">
+          <div class="icon layout vertical center">
+            <h3>Weather</h3>
+            <i id="weather" class="wi wi-cloudy"></i>
+            <h3>Cloudy</h3>
+          </div>
+          <div class="icon layout vertical center">
+            <h3>Moon Phase</h3>
+            <i id="moon" class="wi"></i>
+            <h3 id="phase"></h3>
+          </div>
+        </div>
+        <h2 id="sunSet">Sunset:</h2>
+        <h2 id="moonRise">Moonrise:</h2>
+        <h2 id="moonSet">Moonset:</h2>
+      </div>
+    </div>
   <script src="main.js"></script>
+  <script>
 
+  </script>
   </template>
 </body>
 </html>
